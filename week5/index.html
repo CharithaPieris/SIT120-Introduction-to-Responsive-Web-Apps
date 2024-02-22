@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Calculator | Web Dev Trick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+  <div class="container">
+    <form name="form">
+      <div class="display">
+        <input type="text" placeholder="0" name="displayResult" />
+      </div>
+
+	  <div class="functionrow">
+		<div class="fbuttons">
+			<input type="button" class="blue" value="C" onclick="clearDisplay()">
+			<input type="button" class="blue" value="Del" onclick="deleteLastCharacter()">
+		</div>
+	 </div>
+
+      <div class="buttons">
+
+        <div class="row">
+          <input type="button" value="7" onclick="calcNumbers('7')">
+          <input type="button" value="8" onclick="calcNumbers('8')">
+          <input type="button" value="9" onclick="calcNumbers('9')">
+          <input type="button" value="+" onclick="calcNumbers('+')">
+        </div>
+        
+        <div class="row">
+          <input type="button" value="4" onclick="calcNumbers('4')">
+          <input type="button" value="5" onclick="calcNumbers('5')">
+          <input type="button" value="6" onclick="calcNumbers('6')">
+          <input type="button" value="-" onclick="calcNumbers('-')">
+        </div>
+        
+        <div class="row">
+          <input type="button" value="1" onclick="calcNumbers('1')">
+          <input type="button" value="2" onclick="calcNumbers('2')">
+          <input type="button" value="3" onclick="calcNumbers('3')">
+          <input type="button" value="*" onclick="calcNumbers('*')">
+        </div>
+        
+        <div class="row">
+          <input type="button" value="0" onclick="calcNumbers('0')">
+          <input type="button" value="." onclick="calcNumbers('.')">
+          <input type="button" value="/" onclick="calcNumbers('/')">
+		  <input type="button" class="blue" value="=" onclick="displayResult.value = eval(displayResult.value)">
+        </div>
+      </div>
+
+	  
+	  
+
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
