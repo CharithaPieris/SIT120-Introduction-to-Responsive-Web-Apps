@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
+	<title>The Universe</title>
+	<link rel="stylesheet" href="About.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Poppins:wght@200;300;400;800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="img/AdobeStock_355211758_Preview-removebg-preview.png">
+	<script src="https://kit.fontawesome.com/db8114e4b2.js" crossorigin="anonymous"></script>
+	
+</head>
+	
+		<section class="header">
+
+			<section class="navigation">
+			  <a href="index.html" class="logo">
+				<img src="img/AdobeStock_355211758_Preview-removebg-preview.png" alt="Logo">
+			  </a>
+			  <div class="nav-links">
+				<ul>
+				  <li><a href="index.html">HOME</a></li>
+
+				  <li class="dropdown">
+					<a href="Discovery.html" class="dropbtn">DISCOVERY</a>
+					<div class="dropdown-content">
+					  <a href="Discovery.html#aliens">ALIENS </a>
+					  <a href="Discovery.html#new_worlds">NEW WORLDS</a>
+					  <a href="Discovery.html#moons">MOONS</a>
+					</div>
+				  </li>
+
+				 <li class="dropdown">
+					<a href="Explore.html" class="dropbtn">EXPLORE</a>
+					<div class="dropdown-content">
+					  <a href="Explore.html#planets">PLANETS </a>
+					  <a href="Explore.html#space-travels">SPACE TRAVELS</a>
+					  <a href="Explore.html#space-stations">SPACE STATIONS</a>
+					</div>
+				  </li>
+
+				  <li><a href="More.html">MORE</a></li>
+					
+				  <li><a href="Shop.html">SHOP</a></li>
+
+				  <li class="dropdown">
+					<a href="About.html" class="dropbtn">ABOUT</a>
+					<div class="dropdown-content">
+						<a href="#design">Design</a>
+						<a href="#contact">Contact</a>
+					</div>
+				  </li>
+				  
+				</ul>
+			  </div>
+			</section>
+		</section> 
+
+
+	
+	
+<body>
+	<main>
+	
+		
+
+
+		<div class="text-box" >
+			<h1>&nbsp;</h1>
+			<h1> Helloo Stranger </h1>
+			<br><br><br><br><br><br>
+			<p>My name is M.A. Charitha Buddhika Pieris, and I'd like to take this opportunity to introduce myself. I believe that life is a continuous journey of self-discovery, and I am excited to share a glimpse of who I am with you, This website is designed and developed by me. Currently, I'm in my first year of my degree program. Professionally, I've earned certifications in Cyber Security Ethical Hacking (CSEH) and completed the ACNSA Diploma Programme. My passion for cybersecurity drives me, and I aspire to pursue a master's degree in the field.</p>
+		</div>
+			<br>  
+	
+
+
+
+		<section class="Contac-details" id="contact">
+
+			<div class="ImgContainer" >
+
+				<img src= "img/0000.JPG" style="width:500px;height:600px" >
+			</div>
+				<div class="info">
+
+					<p>Contact</p>
+					<div class="underline"></div>
+					<br><br>
+					<p>Email: <span class="email-id">charithapieris20@gmail.com</span></p> 
+					<p>Phone: +94 - 761308322</p>
+				</div>
+		</section>
+
+
+
+		<section class="Design-details" id="design">
+
+
+				<div class="info1">
+
+					<h3> The Design </h3>
+
+					<br><br><br>
+
+					<p>The purpose of a website focused on the universe and space, Many space-related websites aim to educate the public, particularly students and the curious, about astronomy, astrophysics, and space exploration. My aim is also to provide educational resources, articles, videos, and interactive content to promote learning about the universe.</p>
+
+					<p> My website have a diverse range of target audiences, including: Astronomy Enthusiasts, Students and Educators, Scientists and Researchers, Space Industry Professionals, Space Travel Enthusiasts, Media and Journalists etc.</p>
+
+				</div>
+
+		</section>
+
+
+
+<!---------------------------------------------------------------------------------------- Chat with us ------------------------------------------------------------------------------------->
+
+<section class="chat-container">
+	<button class="chat-button" onclick="toggleChat()">Chat</button>
+	<div class="chat-popup" id="chatPopup">
+		<span class="close-button" onclick="toggleChat()">X</span>
+		<div class="chat-content">
+			<div class="chat-message user-message">
+				Hello, how can I help you?
+			</div>
+			<div class="chat-message bot-message">
+				Hi there! What's on your mind?
+			</div>
+		</div>
+		<div class="message-input-container">
+			<!-- <div class="chat-message user-message">
+			</div> -->
+			<input type="text" class="message-input" id="userMessage" placeholder="Type your message...">
+
+			<button class="send-button" onclick="sendMessage()">Send</button>
+		</div>
+	</div>
+</section>
+
+<script>
+	// JavaScript function to toggle the chat popup
+	function toggleChat() {
+		var chatPopup = document.getElementById("chatPopup");
+		chatPopup.style.display = chatPopup.style.display === "none" ? "block" : "none";
+	}
+
+	// JavaScript function to send a user message
+	function sendMessage() {
+		var userMessage = document.getElementById("userMessage").value;
+		var chatContent = document.querySelector(".chat-content");
+		var messageDiv = document.createElement("div");
+		messageDiv.className = "chat-message user-message";
+		messageDiv.textContent = userMessage;
+		chatContent.appendChild(messageDiv);
+		// Add your logic to handle the user's message here
+	}
+</script>
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------------->
+
+		<section class="footer">
+
+			<section class="base">
+				<div>
+					<center><h1><center>Stay Connected</center></h1></center>
+
+					<br><br>
+				</div>
+
+
+				<div class="futrow">
+					<div class="futcol">
+						<img src="img/AdobeStock_355211758_Preview-removebg-preview.png" class="futlogo"><br>
+						<p1>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.</p1>
+					</div>
+
+					<div class="futcol">
+						<p1>Page Edit and Design <div class="underline"><span></span></div></p1><br><br>
+
+						<p1>Charitha Pieris</p1>
+						<br>
+						<p1> BSCP | CS | 62 | 114</p1> <br>
+
+
+						<br>
+
+						<p1>Contact<div class="underline"><span></span></div></p1><br><br>
+						<p1 class="email-id">charithapieris20@gmail.com</p1><br>
+						<p1> +94 - 761308322</p1>
+
+
+
+					</div>
+					<div class="futcol">
+						<p1>Links<div class="underline"><span></span></div></p1>
+						<br><br>
+						<ul>
+							<li> <a href="index.html">HOME</a> </li>
+							<li> <a href="Discovery.html">DISCOVERY</a> </li>
+							<li> <a href="More.html">MORE</a> </li>
+							<li> <a href="Explore.html">EXPLORE</a> </li>
+							<li> <a href="Shop.html">SHOP</a> </li>
+						</ul>
+					</div>
+
+					<div class="futcol">
+						<p1>Newsletter<div class="underline"><span></span></div></p1>
+						<br><br>
+						<form>
+							<i class="far fa-regular fa-envelope" style="color: #ffffff;"></i>
+							<input type="email" placeholder = "Enter your Email id" required>
+							<button type="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+						</form>
+
+						<div class="social-icons">
+
+							<a href="https://web.facebook.com/charitha.pieris.9">
+								<i class="fa-brands fa-square-facebook" style="color: #000000;"></i>
+							</a>
+
+							<a href="https://twitter.com/home">
+								<i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i>
+							</a>
+
+							<a href="https://www.instagram.com/charitha.pieris/">
+								<i class="fa-brands fa-square-instagram" style="color: #000000;"></i>
+							</a>
+
+							<i class="fa-brands fa-pinterest" style="color: #000000;"></i>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<br>
+
+			<center><div class="line"></div></center>
+
+			<br>
+
+	<!----------------------------------------------------------------------------------- Lower Footer -------------------------------------------------------------------------------->
+
+				<section>
+
+
+
+					<div class="lowfooter">
+
+						<br><br>
+						 <ul>
+							<li><a href="#">FEEDBACK</a></li>
+							<li>|</li>
+							<li><a href="sitemap.html">SITEMAP</a></li>
+						</ul>
+
+						<p>&copy; 2023 Charitha Pieris. All Rights Reserved. Website designed by Charitha Pieris. <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></p>
+
+					</div>
+				</section>
+
+
+		</section>
+	</main>
+</body>
+</html>

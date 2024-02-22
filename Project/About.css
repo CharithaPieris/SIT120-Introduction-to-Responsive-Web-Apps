@@ -1,0 +1,567 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/*------------------------------------------------------------------------------------- fading animation part--------------------------------------------------------------------------*/
+
+
+main {
+    
+    animation: myAnimT 2s ease-in 0s 1 normal forwards;
+}
+
+
+@keyframes myAnimT {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.header{
+	min-height: 90vh;
+	width: 100%;
+	background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url( "img/about.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+
+/*------------------------------------------------------------------------------------- Navigation bar --------------------------------------------------------------------------------*/
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url( "img/about.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Navigation bar styles */
+.navigation {
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: content-box; /* Add this line to override the global * selector */
+}
+
+.navigation .logo img {
+  width: 50px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+  padding: 10px 0; 
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; 
+  outline: none; 
+}
+
+/* Style the dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; 
+  overflow: hidden; 
+  padding: 8px 0; 
+  top: 100%; 
+  left: 0;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: white; 
+  padding: 8px 1px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s; 
+}
+
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*--------------------------------------------------------------------------------- Text ---------------------------------------------------------------------------------------------*/
+
+
+
+.text-box{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+.text-box h1{
+	font-size: 62px;
+	text-shadow: 2px 2px black;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+
+}
+
+.info{
+	text-align: center;
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+}
+
+.info1{
+	text-align: center;
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+}
+
+.design{
+	text-align: center;
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+	margin-bottom: 100px;
+}
+
+
+.text-box2{
+	padding-top: 100px;
+	padding-bottom: 500px;
+}
+
+
+/*-------------------------------------------------------------------------------------- Image -------------------------------------------------------------------------------------*/
+
+.ImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-top: 0;
+    margin-bottom: 100px;
+}
+
+.ImgContainer img {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+
+.Contac-details{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.Design-details{
+	width: 100%;
+	text-align: center;
+	padding-top: 400px;
+	padding-bottom: 420px;
+}
+
+
+/*-------------------------------------------------------------------------------------- Chat with us -------------------------------------------------------------------------------------*/
+
+
+.chat-container {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Styles for the chat button */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the chat popup */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Styles for the close button in the chat popup */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Chat content styles */
+.chat-content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat message styles */
+.chat-message {
+  margin-bottom: 10px;
+}
+
+/* User message styles */
+.user-message {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+/* Bot message styles */
+.bot-message {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+/* Input field styles */
+.message-input {
+  margin-left: 1rem;
+  width: 83%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Send button styles */
+.send-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/*-------------------------------------------------------------------------------------- footer -------------------------------------------------------------------------------------*/
+
+
+
+/* Footer Styles */
+
+.footer {
+  width: 100%;
+  background-image: url( "img/about.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-top-right-radius: 0px;
+  padding: 100px 0 30px;
+}
+
+
+.base h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+
+h3{
+	text-shadow: 2px 2px black;
+}
+
+.futrow {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.futcol {
+    flex-basis: 23%; /* Adjusted to fit 4 columns with spacing */
+    padding: 10px;
+    text-align: justify; /* Center text in columns */
+}
+
+.futcol:nth-child(2), .futcol:nth-child(3){
+	flex-basis: 15px;
+}
+
+.futlogo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.futcol p1{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	color: white;
+}
+
+.futcol p2{
+	color: white;
+	font-size: 13px;
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0 ;
+}
+
+.futcol ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+.futcol ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+
+form .far{
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+
+form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.social-icons .fa-brands{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	background: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.line {
+	width: 50%;
+	height: 2px;
+	background: linear-gradient(to left, transparent 0%, white 50%, transparent 100%);
+}
+
+
+/*-----------------------------------------------------------------------------------lower footer -------------------------------------------------------------------------------------*/
+
+
+
+.lowfooter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowfooter p {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+}
+
+.lowfooter ul {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+
+.lowfooter ul li{
+  color: white;
+  text-decoration: none;
+}
+
+.lowfooter ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.lowfooter ul li.separator {
+  color: white;
+  margin: 5px 0; 
+}
+
+
+.lowfooter li {
+	margin: 0 5px;
+}
+
+
+/*-------------------------------------------------------------------------------------Animation Underline ----------------------------------------------------------------------------*/
+
+
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;	
+}
+
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100px;
+	}
+}
+
+

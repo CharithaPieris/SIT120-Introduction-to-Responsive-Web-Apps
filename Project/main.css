@@ -1,0 +1,15 @@
+.bodycontainer{
+        animation: myAnimT 1s ease-in 0s 1 normal forwards;
+    }
+    
+    
+    @keyframes myAnimT {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 5rem;
+    padding: 0;
+    background-color: #BEADFA;
+}
+
+.header {
+    background-color: #363062;
+    border-radius: 25px; 
+    color: #fff;
+    padding: 20px; 
+    max-width: 100%;
+}
+
+
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px; /* Increase the max-width to make the container wider */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===================================================================================== Input Task =============================================================================*/
+.task-input-container {
+    margin-top: 2rem; /* Add margin to separate it from the header */
+    display: flex;
+    flex-direction: column; /* Stack input elements vertically */
+    align-items: center;
+}
+
+.task-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-input input[type="text"],
+.task-input input[type="datetime-local"],
+.task-input button {
+    padding: 10px; /* Add padding to the input elements and button */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-input button {
+    background-color: #4D4C7D;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+    background-color: #000000;
+}
+
+
+/* ===================================================================================== Task List =============================================================================*/
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem; /* Increase the top margin for the list */
+}
+
+li {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* Add space between checkbox and text */
+.task-info input[type="checkbox"] {
+    margin-right: 50px; /* Adjust the margin value as needed */
+}
+
+
+li button {
+    background-color: #4D4C7D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #000000;
+}
+
+.past-due {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.upcoming {
+    background-color: #f1c40f;
+    color: #fff;
+}

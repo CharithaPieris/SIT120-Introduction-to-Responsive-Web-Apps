@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
+	<title>The Universe</title>
+	<link rel="stylesheet" href="More.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Poppins:wght@200;300;400;800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="img/AdobeStock_355211758_Preview-removebg-preview.png">
+	<script src="https://kit.fontawesome.com/db8114e4b2.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	
+	<section class="header">
+		
+		<section class="navigation">
+		  <a href="index.html" class="logo">
+			<img src="img/AdobeStock_355211758_Preview-removebg-preview.png" alt="Logo">
+		  </a>
+		  <div class="nav-links">
+			<ul>
+			  <li><a href="index.html">HOME</a></li>
+
+			  <li class="dropdown">
+				<a href="Discovery.html" class="dropbtn">DISCOVERY</a>
+				<div class="dropdown-content">
+				  <a href="Discovery.html#aliens">ALIENS </a>
+				  <a href="Discovery.html#new_worlds">NEW WORLDS</a>
+				  <a href="Discovery.html#moons">MOONS</a>
+				</div>
+			  </li>
+
+			  <li class="dropdown">
+				<a href="Explore.html" class="dropbtn">EXPLORE</a>
+				<div class="dropdown-content">
+				  <a href="Explore.html#planets">PLANETS </a>
+				  <a href="Explore.html#space-travels">SPACE TRAVELS</a>
+				  <a href="Explore.html#space-stations">SPACE STATIONS</a>
+				</div>
+			  </li>
+
+			  <li><a href="More.html">MORE</a></li>
+				
+			  <li><a href="Shop.html">SHOP</a></li>
+				
+			  <li class="dropdown">
+				<a href="About.html" class="dropbtn">ABOUT</a>
+				<div class="dropdown-content">
+				  <a href="About.html#design">Design </a>
+				  <a href="About.html#contact">Contact</a>
+				</div>
+			  </li>
+
+			  
+			</ul>
+		  </div>
+		</section>
+
+	</section> 
+
+	
+
+		<section class="bgimages">
+			<img src="img/moon/stars.png" id="stars">
+			<img src="img/moon/moon.png" id="moon">
+			<img src="img/moon/mountains_behind.png" id="mountains_behind">
+
+			<div class="bodycontainer">
+			<h2 id="text">MORE</h2>
+			<img src="img/moon/mountains_front.png" id="mountains_front">
+		</section>
+		
+		<div class="sec">
+			<h2>More about the Universe</h2>
+		</div>
+
+		<script>
+			let stars = document.getElementById('stars');
+			let moon = document.getElementById('moon');
+			let mountains_behind = document.getElementById('mountains_behind');
+			let text = document.getElementById('text');
+			let mountains_front = document.getElementById('mountains_front');
+
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+				stars.style.left = value * 0.25 + 'px';
+				moon.style.top = value * 1.05 + 'px';
+				mountains_behind.style.top = value * 0.5 + 'px';
+				mountains_front.style.top = value * 0 + 'px';
+				text.style.marginBottom = value * 1 + 'px';
+				text.style.marginTop = value * 1.05 + 'px'; 
+				text.style.transform = `translateX(-50%) translateY(${value * 0.5}px)`; // Adjust translateY
+			})
+
+		</script>
+
+
+<!---------------------------------------------------------------------------------------- Content ------------------------------------------------------------------------------------->
+
+<section class="comingsoon">
+	<body>
+		<div class="coming-soon-container">
+		  <h1>Coming Soon</h1>
+		  <div class="countdown">
+			<div id="days">00</div>
+			<div id="hours">00</div>
+			<div id="minutes">00</div>
+			<div id="seconds">00</div>
+		  </div>
+		</div>
+		<script src="script.js"></script>
+	  </body>
+</section>
+
+<script>
+	// Set the date we're counting down to
+const countDownDate = new Date("Dec 31, 2023 00:00:00").getTime();
+
+// Update the countdown every 1 second
+const x = setInterval(function() {
+  const now = new Date().getTime();
+  const distance = countDownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+  document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------------->
+	
+		<section class="footer">
+				
+			<section class="base">
+				<div>
+					<h1><center>Stay Connected</center></h1>
+					<br><br>
+				</div>
+
+
+				<div class="futrow">
+					<div class="futcol">
+						<img src="img/AdobeStock_355211758_Preview-removebg-preview.png" class="futlogo"><br>
+						<p1>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.</p1>
+					</div>
+					
+					<div class="futcol">
+						<p1>Page Edit and Design <div class="underline"><span></span></div></p1><br><br>
+						
+						<p1>Charitha Pieris</p1>
+						<br>
+						<p1> BSCP | CS | 62 | 114</p1> <br>
+						
+						
+						<br>
+						
+						<p1>Contact<div class="underline"><span></span></div></p1><br><br>
+						<p1 class="email-id">charithapieris20@gmail.com</p1><br>
+						<p1> +94 - 761308322</p1>
+						
+				
+						
+					</div>
+					<div class="futcol">
+						<p1>Links<div class="underline"><span></span></div></p1>
+						<br><br>
+						<ul>
+							<li> <a href="index.html">HOME</a> </li>
+							<li> <a href="Discovery.html">DISCOVERY</a> </li>
+							<li> <a href="More.html">MORE</a> </li>
+							<li> <a href="Explore.html">EXPLORE</a> </li>
+							<li> <a href="Shop.html">SHOP</a> </li>
+						</ul>
+					</div>
+					
+					<div class="futcol">
+						<p1>Newsletter<div class="underline"><span></span></div></p1>
+						<br><br>
+						<form>
+							<i class="far fa-regular fa-envelope" style="color: #ffffff;"></i>
+							<input type="email" placeholder = "Enter your Email id" required>
+							<button type="submit"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+						</form>
+						
+						<div class="social-icons">
+							
+							<a href="https://web.facebook.com/charitha.pieris.9">
+								<i class="fa-brands fa-square-facebook" style="color: #000000;"></i>
+							</a>
+							
+							<a href="https://twitter.com/home">
+								<i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i>
+							</a>
+							
+							<a href="https://www.instagram.com/charitha.pieris/">
+								<i class="fa-brands fa-square-instagram" style="color: #000000;"></i>
+							</a>
+							
+							<i class="fa-brands fa-pinterest" style="color: #000000;"></i>
+							
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			
+			<br>
+			
+			<center><div class="line"></div></center>
+			
+			<br>
+			
+		<!----------------------------------------------------------------------------------- Lower Footer ------------------------------------------------------------------------------------->
+
+				<section>
+
+
+
+					<div class="lowfooter">
+						
+						<br><br>
+						<ul>
+							<li><a href="#">FEEDBACK</a></li>
+							<li>|</li>
+							<li><a href="sitemap.html">SITEMAP</a></li>
+						</ul>
+						
+						<p>&copy; 2023 Charitha Pieris. All Rights Reserved. Website designed by Charitha Pieris. <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></p>
+						
+					</div>
+				</section>
+			
+			
+		</section>
+	</div>
+	
+</body>
+</html>

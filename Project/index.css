@@ -1,0 +1,652 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url("img/cover.jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+
+/*------------------------------------------------------------------------------------- Navigation bar --------------------------------------------------------------------------------*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Navigation bar styles */
+.navigation {
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  position: fixed; /* Make the navigation bar fixed */
+  width: 100%; 
+  top: 0; 
+  z-index: 1000; /* Set a high z-index to ensure it's above other content */
+}
+
+.navigation .logo img {
+  width: 50px;
+}
+
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+  padding: 10px 0; 
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; 
+  outline: none; 
+}
+
+/* Style the dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; 
+  overflow: hidden; 
+  padding: 8px 0; 
+  top: 100%; 
+  left: 0;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: white; 
+  padding: 8px 1px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s; 
+}
+
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*------------------------------------------------------------------------------- What is the Universe --------------------------------------------------------------------------------*/
+
+
+
+.text-box{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 62px;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+}
+
+
+
+/*--------------------------------------------------------------------------------- Center Button -------------------------------------------------------------------------------------*/
+
+
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.hero-btn:hover{
+	border: 1px solid #FFFFFF;
+	background: #f44336;
+	transition: 1s;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------- DISCOVERY -------------------------------------------------------------------------------------*/
+
+.DISCOVERY{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	background-color: #B7B6B6; 
+  padding: 50px; 
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+}
+
+.image {
+    flex-basis: 50%; 
+    padding-right: 20px; 
+}
+
+
+.text {
+    flex-basis: 70%; 
+}
+
+
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+	text-shadow: 2px 2px black;
+}
+
+p{
+	color: black;
+	font-size: 15px;
+	font-weight: 300px;
+	line-height: 22px;
+	padding: 10px;
+}
+
+
+/*-------------------------------------------------------------------------------------- EXPLORE -------------------------------------------------------------------------------------*/
+
+.EXPLORE{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h3{
+	color: black;
+}
+
+h1{
+	color: white;
+}
+
+.new-container,
+.new-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.Explore{
+	background:#FFFFFF;
+}
+
+.box {
+  position: relative;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 44px 4px 4px 4px;
+}
+.box .box-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 44px 4px 0 0;
+}
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box .box-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+/*-------------------------------------------------------------------------------------- MISSIONS -------------------------------------------------------------------------------------*/
+
+
+.mission {
+    background-image: url("img/cover2.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+	position: relative;	
+}
+
+
+.mission-col{
+	flex-basis: 50%;
+	background:rgb(27,27,27);
+	background: linear-gradient(90deg, rgba(27,27,27,0.5018382352941176) 0%, rgba(27,27,27,0.49343487394957986) 100%, rgba(27,27,27,0.49343487394957986) 100%);
+	border-radius: 100px;
+	margin-bottom: 5%;
+	padding: 50px 5px;
+	transition: 0.5;
+}
+
+
+.mission{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mission-content {
+    text-align: center;
+    max-width: 1000px; 
+	max-height: 10000px;
+    margin: 0 auto; 
+}
+
+.mission h1, .mission h3, .mission p {
+    color: #FFFFFF;
+}
+
+
+
+.mission-col:hover{
+	box-shadow: 0 0 50px 0px rgba(0,0,0,0.2);
+}
+
+
+
+/*---------------------------------------------------------------------------------- Explore more -------------------------------------------------------------------------------------*/
+
+.explore_more {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* You can adjust the height as needed */
+    background-image:linear-gradient(90deg, rgba(27,27,27,0.5018382352941176) 0%, rgba(27,27,27,0.49343487394957986) 100%, rgba(27,27,27,0.49343487394957986) 100%), url("img/EXPLORE.png");
+    background-size: cover;
+	margin-top: 300px;
+	
+}
+
+/*-------------------------------------------------------------------------------------- Shop Now -------------------------------------------------------------------------------------*/
+
+.shop h1 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.shop h2{
+  text-align: center;
+}
+.coupon {
+  display: inline-block;
+  border: 5px dotted #bbb;
+  border-radius: 15px;
+  max-width: 20%;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.coupon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.coupon:hover {
+  transform: scale(1.05) rotateX(20deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.tilt-coupon {
+  display: inline-block;
+  border: 5px dotted #bbb;
+  border-radius: 15px;
+  max-width: 20%;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+
+.tilt-coupon:hover {
+  transform: perspective(500px) scale(1.05) rotateX(20deg) rotateY(20deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 10px 5px;
+  background-color: #f1f1f1;
+  max-height: 8rem;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+/*-------------------------------------------------------------------------------------- footer -------------------------------------------------------------------------------------*/
+
+
+
+/* Footer Styles */
+
+.footer {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(6, 6, 6, 0.451) 0%, rgba(0, 0, 0, 0.451) 100%, rgba(0, 0, 0, 0.219) 100%), url( "img/cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-top-right-radius: 125px;
+    padding: 100px 0 30px;
+}
+
+
+.futrow {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.futcol {
+    flex-basis: 23%; /* Adjusted to fit 4 columns with spacing */
+    padding: 10px;
+    text-align: justify; /* Center text in columns */
+}
+
+.futcol:nth-child(2), .futcol:nth-child(3){
+	flex-basis: 15px;
+}
+
+.futlogo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.futcol p1{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	color: white;
+}
+
+.futcol p2{
+	color: white;
+	font-size: 13px;
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0 ;
+}
+
+.futcol ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+.futcol ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+
+form .far{
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+
+form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.social-icons .fa-brands{
+	width: 40px;
+	height: 40;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	background: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.line {
+	width: 50%;
+	height: 2px;
+	background: linear-gradient(to left, transparent 0%, white 50%, transparent 100%);
+}
+
+
+/*-----------------------------------------------------------------------------------lower footer -------------------------------------------------------------------------------------*/
+
+
+
+.lowfooter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowfooter p {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+}
+
+.lowfooter ul {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+
+.lowfooter ul li{
+  color: white;
+  text-decoration: none;
+}
+
+.lowfooter ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.lowfooter ul li.separator {
+  color: white;
+  margin: 5px 0; 
+}
+
+
+.lowfooter li {
+	margin: 0 5px;
+}
+
+
+/*-------------------------------------------------------------------------------------Animation Underline ----------------------------------------------------------------------------*/
+
+
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;	
+}
+
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100px;
+	}
+}
+
+

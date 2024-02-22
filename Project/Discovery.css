@@ -1,0 +1,611 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+  background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url(img/counter.jpeg);
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+  margin-bottom: auto;
+
+}
+
+
+/*------------------------------------------------------------------------------------- Navigation bar --------------------------------------------------------------------------------*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+/*   background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url(img/counter.jpeg);
+ */  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+  margin-bottom: auto;
+  
+}
+
+
+/* Navigation bar styles */
+.navigation {
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  position: fixed; /* Make the navigation bar fixed */
+  width: 100%; 
+  top: 0; 
+  z-index: 1000; /* Set a high z-index to ensure it's above other content */
+}
+
+.navigation .logo img {
+  width: 50px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+  padding: 10px 0; 
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; 
+  outline: none; 
+}
+
+/* Style the dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; 
+  overflow: hidden; 
+  padding: 8px 0; 
+  top: 100%; 
+  left: 0;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: white; 
+  padding: 8px 1px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s; 
+}
+
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  background-color: #555; 
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*-------------------------------------------------------------------------------------- Chat -------------------------------------------------------------------------------------*/
+
+
+#chatTrigger {
+  position: fixed;
+  display: block;
+  top: 10em;
+  right: -250px;
+  width: 330px;
+  height: 85px;
+  padding: 10px;
+  border-radius: 35px 0 0 35px;
+  background-color: #fff;
+  box-shadow: 1px 1px 13px #505050;
+  z-index: 999;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &:hover {
+    right: 0;
+  }
+  .chatTriggerBox {
+    background-repeat: no-repeat;
+    height: 70px;
+    width: auto;
+    margin: 10px;
+    padding-left: 85px;
+
+    .chatTriggerText {
+      display: inline-block;
+      width: auto;
+      height: 70px;
+      margin: 0px;
+      padding: 0px;
+      font-weight: normal;
+      font-family: sans-serif;
+      .firstLine {
+        margin: 10px 0;
+        color: #a50206;
+        line-height: 20px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .secondLine {
+        margin: 0;
+        font-weight: bold;
+        line-height: 15px;
+        font-size: 15px;
+        color: #005382;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------- Discoveries --------------------------------------------------------------------------------*/
+
+
+.text-box{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 4%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box{
+  margin-top: 34rem;
+}
+
+.text-box h1{
+	font-size: 62px;
+  text-shadow: 2px 2px black;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: white;
+}
+
+
+/*---------------------------------------------------------------------------------- Counter Wrapper -------------------------------------------------------------------------------*/
+
+.counter-wrapper{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10rem 9%;
+  margin-top: -5rem;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.counter-wrapper::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.counter{
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+
+/*--------------Bottom line-----------------*/
+.counter::before{
+  position: absolute;
+  content: '';
+  bottom: -2rem;
+  left: 50%;
+  width: 20%;
+  height: .2rem;
+  background: red;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(-50%);
+}
+
+.counter .count{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.counter p{
+  font-size: 1.4rem;
+}
+
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+}
+
+@media (max-width:768px){
+  html{
+    .counter-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 8rem;
+    }
+  }
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .counter-wrapper{
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 8rem;
+  }
+
+}
+
+
+
+/*----------------------------------------------------------------------------------- Pics --------------------------------------------------------------------------------------------*/
+
+
+.gallery {
+  display: block;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Increase the minmax value for larger items */
+  gap: 10px; /* Add some gap between items for spacing */
+  padding: 20px; /* Reduce padding */
+  margin: 0 auto; /* Center the gallery on the page */
+  max-width: 75%; /* Limit the maximum width of the gallery */
+  padding-top: 5%;
+}
+
+/* Individual Image Item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 2rem; /* Reduce margin */
+}
+
+/* Image Styles */
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  max-height: 200%; /* Increase the height of images */
+}
+
+/* Hover Effect */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Image Overlay */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+/* Overlay Content */
+.overlay-content {
+  text-align: center;
+  color: #fff;
+}
+
+/* Overlay Content (Title) */
+.overlay-content h3 {
+  font-size: 18px; /* Reduce the title font size */
+  margin: 0;
+}
+
+/* Overlay Content (Description) */
+.overlay-content p {
+  font-size: 14px; /* Reduce the description font size */
+  margin: 0;
+}
+
+/* Show Overlay on Hover */
+.gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+
+/*-------------------------------------------------------------------------------------- sections -------------------------------------------------------------------------------------*/
+
+.alien{
+  padding-top: 110px;
+  margin-bottom: 5rem;
+}
+
+.new_worlds{
+  align-content: center;
+  padding-top: 110px;
+  margin-bottom: 5rem;
+}
+
+.moons{
+  padding-top: 110px;
+  padding-bottom: 300px;
+}
+
+
+/*-------------------------------------------------------------------------------------- footer -------------------------------------------------------------------------------------*/
+
+
+
+/* Footer Styles */
+
+.footer {
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url(img/counter.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+	border-top-right-radius: 125px;
+	padding: 100px 0 30px;
+}
+
+.base h1{
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px black;
+}
+
+
+.futrow {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.futcol {
+    flex-basis: 23%; /* Adjusted to fit 4 columns with spacing */
+    padding: 10px;
+    text-align: justify; /* Center text in columns */
+}
+
+.futcol:nth-child(2), .futcol:nth-child(3){
+	flex-basis: 15px;
+}
+
+.futlogo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.futcol p1{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	color: white;
+}
+
+.futcol p2{
+	color: white;
+	font-size: 13px;
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0 ;
+}
+
+.futcol ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+.futcol ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+
+form .far{
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+
+form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.social-icons .fa-brands{
+	width: 40px;
+	height: 40;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	background: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.line {
+	width: 50%;
+	height: 2px;
+	background: linear-gradient(to left, transparent 0%, white 50%, transparent 100%);
+}
+
+
+/*-----------------------------------------------------------------------------------lower footer -------------------------------------------------------------------------------------*/
+
+
+
+.lowfooter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowfooter p {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+}
+
+.lowfooter ul {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+
+.lowfooter ul li{
+  color: white;
+  text-decoration: none;
+}
+
+.lowfooter ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.lowfooter ul li.separator {
+  color: white;
+  margin: 5px 0; 
+}
+
+
+.lowfooter li {
+	margin: 0 5px;
+}
+
+
+/*-------------------------------------------------------------------------------------Animation Underline ----------------------------------------------------------------------------*/
+
+
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;	
+}
+
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100px;
+	}
+}
+
+
