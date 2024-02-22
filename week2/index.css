@@ -1,0 +1,231 @@
+body{
+	background-image: linear-gradient(90deg, rgba(6,6,6,0.4514180672268907) 0%, rgba(0,0,0,0.4514180672268907) 100%, rgba(0,0,0,0.2189250700280112) 100%), url( "img/backk (2).jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+h1{
+	color: white;
+	font-size: 38px;
+}
+
+p{
+	font-size: 19px;
+	text-align: justify;
+}
+
+ol li{
+	font-size: 17px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------Navigation bar---------------------------------------------------------------------------------*/
+
+nav {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  left: 0; 
+  right: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: #ffd700; 
+}
+
+/* Add transition to color change on hover for navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------sections--------------------------------------------------------------------------------------*/
+
+
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+	padding: 50px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+/*---------------------------------------------------------------------------------------Image section---------------------------------------------------------------------------------*/
+
+
+.ImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ImgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+p{
+	text-align: center;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------Project section---------------------------------------------------------------------------------*/
+
+
+
+
+.projects {
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.projects a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.projects a:hover {
+  color: #ffd700; 
+}
+
+
+.projects button {
+  background-color: #ffd700; 
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.projects button:hover {
+  background-color: black; 
+  color: #ffd700; 
+}
+
+
+h2 {
+  color: white;
+  font-size: 24px; 
+  margin-top: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------Style the footer---------------------------------------------------------------------------------*/
+
+
+
+/* Style for project cards */
+.project-card {
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+  background-color: #000000; /* Change the background color on hover */
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------Style the footer---------------------------------------------------------------------------------*/
+
+.footer {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+

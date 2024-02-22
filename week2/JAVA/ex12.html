@@ -1,0 +1,21 @@
+<html>
+<head><title>MICROSOFT</title>
+<script type="text/javascript">
+function fruitprice()
+{
+var expr= document.getElementById("fruit").value switch (expr) { case "Oranges":
+document.write("Oranges are $0.59 a pound."); break; case "Mangoes": case
+"Papayas":
+document.write("Mangoes and papayas are $2.79 a pound."); // expected output:
+"Mangoes and papayas are $2.79 a pound." break; case "Banana":
+document.write("Bananas are $1.25 a pound."); break; default:
+document.write("Sorry, we are out of " + expr + ".");
+}
+}
+</script>
+</head>
+<body>
+Enter a Fruit <input type="text" name="fruit" id="fruit">
+<input type="button" value="OK" onclick="fruitprice()">
+</body>
+</html>

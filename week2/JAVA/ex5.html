@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>MICROSOFT</title>
+	
+	<script type="text/javascript">
+	function myAdd()
+		{
+			var x = parseInt(document.getElementById("num1").value);
+			var y = parseInt(document.getElementById("num2").value);
+			var z = document.getElementById("answer");
+			
+			z.value=x+y;
+		}
+	</script>
+</head>
+
+<body bgcolor="#55E2FF">
+	Enter Number <input type="text" name="num1" id="num1"><br>
+	Enter Number <input type="text" name="num2" id="num2"><br><br>
+	
+	<input type="button" value="Calculate" onClick="myAdd()"><br><br>
+	Answer <input type="text" id="answer" name="answer" readonly="true">
+</body>
+</html>

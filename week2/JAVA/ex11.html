@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Basic Calculator with Radio button </title>
+<script> function solve() { var math_opt =
+document.getElementsByName("math"); var no_one =
+document.getElementById("no1").value; var no_two =
+document.getElementById("no2").value;
+if (no_one=="")
+{
+var msg = "Give the first value."; document.getElementById('msg').innerHTML
+= msg; return false;
+} else if (no_two=="")
+{ var msg = "Give the second value.";
+document.getElementById('msg').innerHTML = msg; return false;
+}
+if (math_opt[0].checked == true)
+{
+sum = parseInt(no_one) + parseInt(no_two);
+	results = "The sum of " + no_one + " and " + no_two + " is " + sum +".";
+document.getElementById('msg').innerHTML = results; return false;
+} else if (math_opt[1].checked == true) { diff = parseInt(no_one) -
+parseInt(no_two);
+results = "The difference between " + no_one + " and " +no_two
++ " is " + diff +"."; document.getElementById('msg').innerHTML = results;
+return false;
+} else if (math_opt[2].checked == true)
+{ product = parseInt(no_one) *parseInt(no_two);
+results = "The product between " + no_one + " and " + no_two +
+" is " + product +"."; document.getElementById('msg').innerHTML = results;
+return false;
+} else if (math_opt[3].checked == true)
+{ quotient = parseInt(no_one) / parseInt(no_two);
+results = "The quotient between " + no_one + " and " + no_two
++ " is " + quotient +"."; document.getElementById('msg').innerHTML =
+results; return false;
+}
+
+else { var msg = "You must
+select your math operator."; document.getElementById('msg').innerHTML =
+msg; return false;
+}
+return true;
+} function reset_msg()
+{ document.getElementById('msg').innerHTML = ''; }
+function clear()
+{ document.getElementById('msg').innerHTML = ""; no_one=""; no_two="";
+no_one.focus();
+}
+</script>
+</head>
+<body>
+<br>
+<h1> Basic Calculator Using Radio Button </h1>
+<br>
+<form action="" method="POST">
+<label for="first_value">
+First Value
+</label>
+<input type="text" name="no_one" id="no1" size="5" autofocus>
+<br><br>
+<label for="second_value">
+Second Value
+</label>
+<input type="text" name="no_2" id="no2" size="5">
+<br><br>
+<label>Operators</label><br>
+<br> <label for="radio1">
+<input type="radio" name="math" onclick="reset_msg();"/>
+Addition
+</label>
+<input type="radio" name="math" onclick="reset_msg();"/>
+Subtraction
+<input type="radio" name="math" onclick="reset_msg();" />
+Multiplication
+<input type="radio" name="math" onclick="reset_msg();" />
+Division
+<br><br>
+<input type="submit" value="Compute" onclick="return solve();"
+/>
+<input type="submit" value="Clear" onclick="return clear();"
+/>
+<br><br>
+<div id="msg"></div>
+</form>
+</body>
+</html>

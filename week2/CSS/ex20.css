@@ -1,0 +1,23 @@
+div.background
+{
+width:500px;
+height:250px;
+background:url(./images/flowers.jpg) repeat;
+border:2px solid black;
+}
+div.transbox
+{
+width:400px;
+height:180px;
+margin:30px 50px;
+background-color:#ffffff;
+border:1px solid black;
+filter:alpha(opacity=60);
+opacity:.6;
+}
+div.transbox p
+{
+margin:30px 40px;
+font-weight:bold;
+color:#000000;
+}

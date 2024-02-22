@@ -1,0 +1,21 @@
+<html>
+<head><title>MICROSOFT</title>
+<script type ="text/javascript">
+function myif()
+{ var x = parseInt(document.getElementById("num").value);
+if (x==100)
+{ document.write("The Value is 100");
+} else if (x<100)
+{ document.write("The Value is less than 100");
+} else if(x>100)
+{ document.write("The Value is greater than 100");
+} else { document.write("The Value is not vaild");
+}
+}
+</script>
+</head>
+<body>
+Enter a Number <input type ="text" name="num" id="num">
+<input type ="button" Value ="ok" onclick="myif()">
+</body>
+</html>

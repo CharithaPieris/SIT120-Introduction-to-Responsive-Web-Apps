@@ -1,0 +1,16 @@
+<html>
+<head><title>AICT</title>
+<script type ="text/javascript">
+function mycheck()
+{
+var answer = parseInt(document.getElementById("num").value);
+var result = (answer==8)?"Weldone":"Try Again";
+document.getElementById("demo").innerHTML = result;
+}
+</script>
+</head>
+<body>
+5+3= <input type ="text" name="num" id="num"><p id="demo"></p>
+<input type ="button" Value ="ok" onclick="mycheck()">
+</body>
+</html>

@@ -1,0 +1,24 @@
+div.parent
+{
+position: relative;
+left:20px;
+top:100px;
+}
+div.child
+{
+position: relative;
+left:150px;
+top:20px;
+}
+div.parent2
+{
+position: absolute;
+left: 100px;
+top:400px;
+}
+div.child2
+{
+position: relative;
+left: 100px;
+top:200px;
+}

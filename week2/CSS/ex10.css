@@ -1,0 +1,32 @@
+div.ex1
+{
+width:400px;
+padding:20px;
+border:5px solid;
+border-color:red;
+border-radius:50px;
+margin-bottom:100px;
+margin-top:50px;
+}
+div.ex2
+{
+width:200px;
+padding:10px;
+border:10px gray;
+border-radius:10px;
+margin-bottom:5px;
+margin-left:3px;
+margin-top:50px;
+border-style:double;
+}
+
+
+div.ex3
+{
+width:400px;
+padding-left:20px;
+padding-top:0px;
+border:20px ridge green;
+border-radius:0px;
+margin:50px;
+}

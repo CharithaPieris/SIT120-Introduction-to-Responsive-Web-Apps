@@ -1,0 +1,12 @@
+#img1
+{
+position:absolute; left:220px; top:220px; z-index:1;
+}
+#img2
+{
+position:absolute; left:420px; top:420px; z-index:2;
+}
+#img3
+{
+position:absolute; left:620px; top:620px; z-index:3;
+}
