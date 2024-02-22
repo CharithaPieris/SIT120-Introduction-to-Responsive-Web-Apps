@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body bgcolor="#039dad">
+
+  <div id="app">
+    <div class="task-container">
+        <h1>Task List</h1>
+
+        <input v-model="newTask" @keyup.enter="addTask" placeholder="Add a new task" class="task-input">
+        
+        <select v-model="selectedCategory" class="select-category">
+          <option value="Personal">Personal</option>
+          <option value="Other">Other</option>
+        </select>
+      
+
+        <div class="addbutton">
+          <button @click="addTaskButton">Add Task</button>
+        </div>
+
+        <ul>
+          <li v-for="(task, index) in tasks" :key="index">
+              <div class="checkbox-container">
+                  <input type="checkbox" class="checkbox-input" v-model="task.completed">
+                  <label class="checkbox-label">
+                      <strong>Category:</strong> {{ task.category }}
+                      <br>
+                      <strong>Task:</strong> {{ task.text }}
+                  </label>
+              </div>
+              <button @click="deleteTask(index)">Delete</button>
+          </li>
+      </ul>
+      
+    </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
