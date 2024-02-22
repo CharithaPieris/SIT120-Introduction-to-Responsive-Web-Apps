@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List with Time Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+        
+            <h1 class="header">To-Do List with Time Management</h1>
+
+            <!-- Task Input Container -->
+            <div class="task-input-container">
+                <div class="task-input">
+                    <input type="text" v-model="newTask" placeholder="Add a task">
+                    <input type="datetime-local" v-model="newDeadline">
+                    <button @click="addTask">Add Task</button>
+                </div>
+            </div>
+
+            <!-- Task List Container -->
+            <ul class="task-list">
+                <li v-for="(task, index) in tasks" :key="index" :class="{'past-due': task.isPastDue}">
+                    <div class="task-info">
+                        <input type="checkbox" v-model="task.isCompleted">
+                        <span>{{ task.description }}</span>
+                        <span>(Due: {{ task.deadline }})</span>
+                    </div>
+                    <button @click="deleteTask(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
